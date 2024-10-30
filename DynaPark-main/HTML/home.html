@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamento</title>
+    <link rel="stylesheet" href="../CSS/home.css">
+</head>
+<body>
+    <div class="menu-btn" id="menuBtn">
+        <img src="" alt="Menu" id="menuIcon">
+    </div>
+    
+    <div class="side-menu" id="sideMenu">
+        <div class="menu-header">
+            <span>Menu</span>
+            <a href="javascript:void(0)" class="close-btn" id="closeBtn">&times;</a>
+        </div>
+        <a href="perfil.html">Perfil</a>
+        <a href="nossa-historia.html">Nossa História</a>
+        <a href="veiculo.html">Veículo(s)</a>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <div class="saudacao">
+                <p>Olá, <span id="userName">Nome do Usuário</span>!</p>
+            </div>
+            <div class="timer" id="timer">
+                <p>Tempo: 00:00:00</p>
+            </div>
+        </div>
+        <div class="button-container">
+            <button class="button" id="entradaBtn">Registrar Entrada</button>
+            <button class="button" id="saidaBtn" disabled>Registrar Saída</button>
+        </div>
+    </div>
+
+    <div class="historico">
+        <h2>Histórico de Estacionamento</h2>
+        <ul id="historicoList">
+            <!-- Histórico será adicionado aqui -->
+        </ul>
+        <button class="clear-button" id="limparHistoricoBtn">Limpar Histórico</button>
+    </div>    
+
+    <script src="../JS/script.js"></script>
+</body>
+</html>

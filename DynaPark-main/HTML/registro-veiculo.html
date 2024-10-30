@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Veículo</title>
+    <link rel="stylesheet" href="../CSS/registro-veiculo.css">
+</head>
+<body>
+    <div class="menu-btn" id="menuBtn">
+        <img src="../CSS/menu-icon.png" alt="Menu">
+    </div>
+    
+    <div class="side-menu" id="sideMenu">
+        <div class="menu-header">
+            <span>Menu</span>
+            <a href="javascript:void(0)" class="close-btn" id="closeBtn">&times;</a>
+        </div>
+        <a href="home.html">Início</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="nossa-historia.html">Nossa História</a>
+        <a href="veiculo.html">Veículo(s)</a>
+    </div>
+
+    <div class="container">
+        <h1>Registrar Veículo</h1>
+        <form action="../process.php?action=register_vehicle" method="POST">
+            <label for="plate">Placa:</label>
+            <input type="text" id="plate" name="plate" required>
+            <label for="brand">Marca:</label>
+            <input type="text" id="brand" name="brand" required>
+            <label for="model">Modelo:</label>
+            <input type="text" id="model" name="model" required>
+            <button type="submit">Registrar</button>
+        </form>        
+    </div>
+
+    <script src="../JS/registro-veiculo.js"></script>
+    <script src="../JS/script.js"></script>
+</body>
+</html>

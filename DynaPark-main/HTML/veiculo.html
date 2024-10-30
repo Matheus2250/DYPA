@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veículo(s)</title>
+    <link rel="stylesheet" href="../CSS/veiculo.css">
+</head>
+<body>
+    <div class="menu-btn" id="menuBtn">
+        <img src="../CSS/menu-icon.png" alt="Menu">
+    </div>
+    
+    <div class="side-menu" id="sideMenu">
+        <div class="menu-header">
+            <span>Menu</span>
+            <a href="javascript:void(0)" class="close-btn" id="closeBtn">&times;</a>
+        </div>
+        <a href="home.html">Início</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="nossa-historia.html">Nossa História</a>
+        <a href="veiculo.html">Veículo(s)</a>
+    </div>
+
+    <div class="container">
+        <h1>Veículos Registrados</h1>
+        <ul id="vehicleList">
+            <!-- Lista de veículos será carregada aqui -->
+        </ul>
+        <button class="button" onclick="window.location.href='registro-veiculo.html'">Registrar Novo Veículo</button>
+    </div>
+
+    <script src="../JS/veiculo.js"></script>
+    <script src="../JS/script.js"></script> <!-- Adicionando script.js para carregar a imagem de perfil -->
+</body>
+</html>

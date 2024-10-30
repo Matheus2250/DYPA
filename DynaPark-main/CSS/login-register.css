@@ -1,0 +1,94 @@
+/* Estilos comuns para as páginas de login e cadastro */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b509d7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+/* Estilo para a logo */
+.logo {
+    margin-top: 70px;
+    margin-bottom: 20px; /* Adiciona um espaço entre a logo e os containers */
+    text-align: center;  /* Centraliza a logo */
+}
+
+.logo img {
+    width: 150px; /* Ajuste o tamanho da logo conforme necessário */
+    height: auto;
+}
+
+
+.login-container, .register-container {
+    background-color: #ffffff97;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+button {
+    background-color: #ff3dc8;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5d005f;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+a {
+    color: #1100ff;
+    text-decoration: none;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}

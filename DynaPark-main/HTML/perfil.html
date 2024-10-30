@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Conta</title>
+    <link rel="stylesheet" href="../CSS/perfil.css">
+</head>
+<body>
+    <div class="menu-btn" id="menuBtn">
+        <img src="" alt="Menu" id="menuIcon">
+    </div>
+    
+    <div class="side-menu" id="sideMenu">
+        <div class="menu-header">
+            <span>Menu</span>
+            <a href="javascript:void(0)" class="close-btn" id="closeBtn">&times;</a>
+        </div>
+        <a href="home.html">Início</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="nossa-historia.html">Nossa História</a>
+        <a href="veiculo.html">Veículo(s)</a>
+    </div>
+
+    <div class="container">
+        <h2>Gerenciar Conta</h2>
+        <form id="profileForm">
+            <div class="profile-pic">
+                <img id="profileImage" src="default-avatar.png" alt="Foto de Perfil">
+                <input type="file" id="profileImageInput" accept="image/*" style="display: none;">
+                <button type="button" onclick="document.getElementById('profileImageInput').click()">Alterar Foto</button>
+            </div>
+            
+            <div class="input-group">
+                <label for="firstName">Nome</label>
+                <input type="text" id="firstName" value="">
+            </div>
+            
+            <div class="input-group">
+                <label for="lastName">Sobrenome</label>
+                <input type="text" id="lastName" value="">
+            </div>
+            
+            <button type="submit">Salvar Alterações</button>
+        </form>
+
+        <p id="successMessage" style="display: none;">Alterações salvas com sucesso!</p>
+    </div>
+
+    <script src="../JS/perfil.js"></script>
+</body>
+</html>
